@@ -1,0 +1,27 @@
+header {
+    flex: 0.5;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.headerContent {
+    flex: 1;
+    padding: 0;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.circle {
+    width: 75px;
+    line-height: 75px;
+    height: 75px;
+    border: 2px solid white;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}

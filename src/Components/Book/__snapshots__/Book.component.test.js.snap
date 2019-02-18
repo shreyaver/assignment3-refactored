@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Book renders without crashing 1`] = `
+<div
+  className="book"
+>
+  <div
+    className="imagePanel"
+    style={
+      Object {
+        "backgroundImage": "url(cover_image.jpeg)",
+      }
+    }
+  />
+  <div
+    className="bookData"
+  >
+    <p
+      className="bookName"
+    >
+      Harry Potter and the Deathly Hallows (Harry Potter, #7)
+    </p>
+    <span>
+      4.62
+      <button
+        className="likedHeartIcon"
+        type="button"
+      />
+    </span>
+  </div>
+</div>
+`;

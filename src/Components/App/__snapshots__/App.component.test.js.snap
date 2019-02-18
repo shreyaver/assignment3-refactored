@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders without crashing 1`] = `
+<div
+  className="app"
+>
+  <header>
+    <div
+      className="headerContent"
+    >
+      <div
+        className="circle"
+      >
+        BS
+      </div>
+    </div>
+  </header>
+  <div
+    className="books"
+  >
+    <div
+      className="booksContent"
+    />
+  </div>
+</div>
+`;

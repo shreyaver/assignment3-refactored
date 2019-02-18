@@ -1,0 +1,46 @@
+.book {
+    width: 30%;
+    margin-top: 3%; 
+    margin-bottom: 1.5%;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.imagePanel {
+    width:100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bookData {
+    background-color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+button {
+    height: 25px;
+    width:25px;
+    border: none;
+}
+button:focus {
+    outline: none;
+}
+.bookName {
+    text-align: center;
+    text-transform: uppercase;
+}
+.heartIcon {
+    float:right;
+    background-image: url("../../Icons/heart-black.svg");
+}
+.likedHeartIcon {
+    float:right;
+    background-image: url("../../Icons/heart-red.svg");
+}

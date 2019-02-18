@@ -1,0 +1,48 @@
+.booksByAuthor {
+    border: 5px solid orange;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 310px;
+    justify-content: space-evenly;
+    width: 100%;
+    border-radius: 30px;
+}
+.booksByAuthorContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.authorName{
+    background-color: white;
+    color: orange;
+    box-sizing: border-box;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 0.5rem;
+    width: 25%;
+    position: relative;
+    bottom: -1.5rem;
+
+}
+.authorName span {
+    flex-grow: 1;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+@media all and (max-width: 600px) {
+   .authorName span {
+       font-size: 1rem;
+   }
+   .authorName {
+       margin-bottom: 10px;
+   }
+}
