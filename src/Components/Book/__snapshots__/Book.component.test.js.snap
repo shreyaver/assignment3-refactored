@@ -13,7 +13,7 @@ exports[`Book renders without crashing 1`] = `
     }
   />
   <div
-    className="bookData"
+    className="bookDataEven"
   >
     <p
       className="bookName"

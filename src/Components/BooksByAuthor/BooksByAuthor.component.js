@@ -6,8 +6,8 @@ import './BooksByAuthor.component.css';
 const BooksByAuthor = (props) => {
   const booksByAuthor = [];
   const { author, books } = props;
-  books.forEach((book) => {
-    booksByAuthor.push(<Book book={book} key={book.Name} />);
+  books.forEach((book, index) => {
+    booksByAuthor.push(<Book book={book} key={book.Name} index={index} />);
   });
   return (
     <div className="booksByAuthorContainer">

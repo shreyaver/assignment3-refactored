@@ -32,7 +32,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataEven"
           >
             <p
               className="bookName"
@@ -60,7 +60,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataOdd"
           >
             <p
               className="bookName"
@@ -88,7 +88,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataEven"
           >
             <p
               className="bookName"
@@ -116,7 +116,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataOdd"
           >
             <p
               className="bookName"
@@ -144,7 +144,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataEven"
           >
             <p
               className="bookName"
@@ -172,7 +172,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataOdd"
           >
             <p
               className="bookName"
@@ -200,7 +200,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataEven"
           >
             <p
               className="bookName"
@@ -243,7 +243,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataEven"
           >
             <p
               className="bookName"
@@ -271,7 +271,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataOdd"
           >
             <p
               className="bookName"
@@ -299,7 +299,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataEven"
           >
             <p
               className="bookName"
@@ -327,7 +327,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataOdd"
           >
             <p
               className="bookName"
@@ -355,7 +355,7 @@ exports[`Books renders without crashing 1`] = `
             }
           />
           <div
-            className="bookData"
+            className="bookDataEven"
           >
             <p
               className="bookName"
