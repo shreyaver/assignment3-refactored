@@ -1,5 +1,5 @@
 .booksByAuthor {
-    border: 5px solid orange;
+    border: 5px solid var(--tan-hide);
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -9,16 +9,24 @@
     width: 100%;
     border-radius: 30px;
 }
+.book:nth-child(even) .bookData{
+    background-color: var(--white);
+    color: var(--tan-hide);
+}
+.book:nth-child(odd) .bookData{
+    background-color: var(--tan-hide);
+    color: var(--blue-dianne);
+}
 .booksByAuthorContainer {
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
 }
 .authorName{
-    background-color: white;
-    color: orange;
+    background-color: var(--white);
+    color: var(--tan-hide);
     box-sizing: border-box;
     height: 3rem;
     display: flex;
@@ -44,5 +52,6 @@
    }
    .authorName {
        margin-bottom: 10px;
+       width: 35%;
    }
 }

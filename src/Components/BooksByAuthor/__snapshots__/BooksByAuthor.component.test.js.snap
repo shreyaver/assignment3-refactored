@@ -16,17 +16,17 @@ exports[`BooksByAuthor renders without crashing 1`] = `
   >
     <div
       className="book"
+      style={
+        Object {
+          "backgroundImage": "url(cover_image.jpeg)",
+        }
+      }
     >
       <div
         className="imagePanel"
-        style={
-          Object {
-            "backgroundImage": "url(cover_image.jpeg)",
-          }
-        }
       />
       <div
-        className="bookDataEven"
+        className="bookData"
       >
         <p
           className="bookName"
@@ -34,9 +34,9 @@ exports[`BooksByAuthor renders without crashing 1`] = `
           Harry Potter and the Deathly Hallows (Harry Potter, #7)
         </p>
         <span>
-          4.62
+          4.6
           <button
-            className="likedHeartIcon"
+            className="heartIcon"
             type="button"
           />
         </span>
@@ -44,17 +44,17 @@ exports[`BooksByAuthor renders without crashing 1`] = `
     </div>
     <div
       className="book"
+      style={
+        Object {
+          "backgroundImage": "url(cover_image.jpeg)",
+        }
+      }
     >
       <div
         className="imagePanel"
-        style={
-          Object {
-            "backgroundImage": "url(cover_image.jpeg)",
-          }
-        }
       />
       <div
-        className="bookDataOdd"
+        className="bookData"
       >
         <p
           className="bookName"
@@ -62,9 +62,9 @@ exports[`BooksByAuthor renders without crashing 1`] = `
           Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)
         </p>
         <span>
-          4.54
+          4.5
           <button
-            className="likedHeartIcon"
+            className="heartIcon"
             type="button"
           />
         </span>
@@ -72,17 +72,17 @@ exports[`BooksByAuthor renders without crashing 1`] = `
     </div>
     <div
       className="book"
+      style={
+        Object {
+          "backgroundImage": "url(cover_image.jpeg)",
+        }
+      }
     >
       <div
         className="imagePanel"
-        style={
-          Object {
-            "backgroundImage": "url(cover_image.jpeg)",
-          }
-        }
       />
       <div
-        className="bookDataEven"
+        className="bookData"
       >
         <p
           className="bookName"
@@ -90,119 +90,7 @@ exports[`BooksByAuthor renders without crashing 1`] = `
           Harry Potter and the Half-Blood Prince (Harry Potter, #6)
         </p>
         <span>
-          4.54
-          <button
-            className="likedHeartIcon"
-            type="button"
-          />
-        </span>
-      </div>
-    </div>
-    <div
-      className="book"
-    >
-      <div
-        className="imagePanel"
-        style={
-          Object {
-            "backgroundImage": "url(cover_image.jpeg)",
-          }
-        }
-      />
-      <div
-        className="bookDataOdd"
-      >
-        <p
-          className="bookName"
-        >
-          Harry Potter and the Goblet of Fire (Harry Potter, #4)
-        </p>
-        <span>
-          4.53
-          <button
-            className="likedHeartIcon"
-            type="button"
-          />
-        </span>
-      </div>
-    </div>
-    <div
-      className="book"
-    >
-      <div
-        className="imagePanel"
-        style={
-          Object {
-            "backgroundImage": "url(cover_image.jpeg)",
-          }
-        }
-      />
-      <div
-        className="bookDataEven"
-      >
-        <p
-          className="bookName"
-        >
-          Harry Potter and the Order of the Phoenix (Harry Potter, #5)
-        </p>
-        <span>
-          4.47
-          <button
-            className="heartIcon"
-            type="button"
-          />
-        </span>
-      </div>
-    </div>
-    <div
-      className="book"
-    >
-      <div
-        className="imagePanel"
-        style={
-          Object {
-            "backgroundImage": "url(cover_image.jpeg)",
-          }
-        }
-      />
-      <div
-        className="bookDataOdd"
-      >
-        <p
-          className="bookName"
-        >
-          Harry Potter and the Sorcerers Stone (Harry Potter, #1)
-        </p>
-        <span>
-          4.45
-          <button
-            className="heartIcon"
-            type="button"
-          />
-        </span>
-      </div>
-    </div>
-    <div
-      className="book"
-    >
-      <div
-        className="imagePanel"
-        style={
-          Object {
-            "backgroundImage": "url(cover_image.jpeg)",
-          }
-        }
-      />
-      <div
-        className="bookDataEven"
-      >
-        <p
-          className="bookName"
-        >
-          Harry Potter and the Chamber of Secrets (Harry Potter, #2)
-        </p>
-        <span>
-          4.38
+          4.5
           <button
             className="heartIcon"
             type="button"

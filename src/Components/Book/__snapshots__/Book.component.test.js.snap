@@ -3,17 +3,17 @@
 exports[`Book renders without crashing 1`] = `
 <div
   className="book"
+  style={
+    Object {
+      "backgroundImage": "url(cover_image.jpeg)",
+    }
+  }
 >
   <div
     className="imagePanel"
-    style={
-      Object {
-        "backgroundImage": "url(cover_image.jpeg)",
-      }
-    }
   />
   <div
-    className="bookDataEven"
+    className="bookData"
   >
     <p
       className="bookName"
@@ -21,9 +21,9 @@ exports[`Book renders without crashing 1`] = `
       Harry Potter and the Deathly Hallows (Harry Potter, #7)
     </p>
     <span>
-      4.62
+      4.6
       <button
-        className="likedHeartIcon"
+        className="heartIcon"
         type="button"
       />
     </span>

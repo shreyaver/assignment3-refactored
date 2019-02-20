@@ -1,20 +1,53 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
+import Axios from 'axios';
 import App from './App.component';
-import mockBooks from '../../mockData';
-import axios from 'axios';
+import mockBooksWithLiked from '../../mockData/booksWithLiked.json';
 
+jest.mock('../../Helpers/getBooksAndLiked/getBooksAndLiked', () => jest.fn().mockImplementation(() => Promise.resolve(mockBooksWithLiked)));
+
+// testing header refresh?
+// testing snapshot after loading?
+let mockLikeBook;
+
+beforeAll(() => {
+  mockLikeBook = jest.spyOn(Axios, 'post');
+  mockLikeBook.mockImplementation((url, likedPayload) => Promise.resolve({ data: likedPayload.liked === true ? 'Book liked!' : 'Book disliked!' }));
+});
+afterAll(() => {
+  jest.restoreAllMocks();
+});
 describe('App', () => {
-  let getMock;
-  beforeAll(() => {
-    getMock = jest.spyOn(axios, 'get');
-    getMock.mockImplementation(() => Promise.resolve({ data: mockBooks }));
+  it('renders for loading page', () => {
+    const loadingPage = renderer.create(<App />).toJSON();
+    expect(loadingPage).toMatchSnapshot();
   });
-  afterAll(() => {
-    getMock.mockRestore();
+
+  // it('renders after data is fetched', async () => {
+  //   const app = renderer.create(<App />);
+  //   await app.toTree().instance.componentDidMount();
+  //   expect(app.toJSON()).toMatchSnapshot();
+  // });
+
+  it('sets initial state to empty object', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.instance().state).toEqual({});
   });
-  it('renders without crashing', () => {
-    const landingPage = renderer.create(<App />).toJSON();
-    expect(landingPage).toMatchSnapshot();
+
+  it('sets state to fetched data after mounting', async () => {
+    const wrapper = shallow(<App />);
+    await wrapper.instance().componentDidMount();
+    expect(wrapper.instance().state).toEqual(mockBooksWithLiked);
+  });
+});
+
+describe('handleLikeClick()', () => {
+  it('changes liked state for passed book', async () => {
+    const wrapper = shallow(<App />);
+    await wrapper.instance().componentDidMount();
+    const originalBook = Object.values(wrapper.instance().state.books)[0][0];
+    await wrapper.instance().handleLikeClick(originalBook)();
+    expect(Object.values(wrapper.instance().state.books)[0][0]).toEqual({ ...originalBook, liked: !originalBook.liked });
   });
 });

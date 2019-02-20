@@ -1,25 +1,20 @@
 import React from 'react';
 import './Book.component.css';
 import PropTypes from 'prop-types';
+import coverImage from '../../Images/cover_image.jpeg';
+import roundOffRating from '../../Helpers/roundOffRating/roundOffRating';
 
 const Book = (props) => {
-  const imageData = require('../../Images/cover_image.jpeg');
-  const { book, index } = props;
-  let likeButton;
-  if (book.rating >= 4.5) {
-    likeButton = <button type="button" className="likedHeartIcon" />;
-  } else {
-    likeButton = <button type="button" className="heartIcon" />;
-  }
-  const bookData = index % 2 === 0 ? 'bookDataEven' : 'bookDataOdd';
+  const { book, handleLikeClick } = props;
+  const likeButton = book.liked === true ? 'likedHeartIcon' : 'heartIcon';
   return (
-    <div className="book">
-      <div className="imagePanel" style={{ backgroundImage: `url(${imageData})` }} />
-      <div className={bookData}>
+    <div className="book" style={{ backgroundImage: `url(${coverImage})` }}>
+      <div className="imagePanel" />
+      <div className="bookData">
         <p className="bookName">{book.Name}</p>
         <span>
-          {book.rating}
-          {likeButton}
+          {roundOffRating(book.rating)}
+          <button type="button" className={likeButton} onClick={handleLikeClick(book)} />
         </span>
       </div>
     </div>
@@ -32,6 +27,6 @@ Book.propTypes = {
     Author: PropTypes.string,
     id: PropTypes.number,
   }).isRequired,
-  index: PropTypes.number.isRequired,
+  handleLikeClick: PropTypes.func.isRequired,
 };
 export default Book;

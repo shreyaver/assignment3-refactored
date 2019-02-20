@@ -1,27 +1,42 @@
 header {
-    flex: 0.5;
-    min-height: 100px;
+    min-height: 110px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    outline: none;
 }
-.headerContent {
+.headerLine {
     flex: 1;
-    padding: 0;
-    width: 20%;
+}
+.headerLine hr {
+    border: none;
+    height: 4px;
+    color: var(--white); 
+    background-color: var(--white);
+}
+.headerTitle {
+    height: 90px;
+    width: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+}
+.headerCaption {
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
 }
 .circle {
-    width: 75px;
-    line-height: 75px;
-    height: 75px;
-    border: 2px solid white;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    border: 2px solid var(--white);
     border-radius: 50%;
     vertical-align: middle;
     text-align: center;
-    font-size: 3rem;
-    color: white;
+    font-size: 2rem;
+    color: var(--white);
 }

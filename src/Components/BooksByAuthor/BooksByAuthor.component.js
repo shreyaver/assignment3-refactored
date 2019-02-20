@@ -5,9 +5,9 @@ import './BooksByAuthor.component.css';
 
 const BooksByAuthor = (props) => {
   const booksByAuthor = [];
-  const { author, books } = props;
-  books.forEach((book, index) => {
-    booksByAuthor.push(<Book book={book} key={book.Name} index={index} />);
+  const { author, books, handleLikeClick } = props;
+  books.forEach((book) => {
+    booksByAuthor.push(<Book book={book} key={book.Name} handleLikeClick={handleLikeClick} />);
   });
   return (
     <div className="booksByAuthorContainer">
@@ -28,7 +28,8 @@ BooksByAuthor.propTypes = {
       Author: PropTypes.string.isRequired,
       id: PropTypes.number.isRequired,
     }),
-  ),
+  ).isRequired,
   author: PropTypes.string.isRequired,
+  handleLikeClick: PropTypes.func.isRequired,
 };
 export default BooksByAuthor;

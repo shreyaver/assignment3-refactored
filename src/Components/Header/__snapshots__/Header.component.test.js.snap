@@ -1,15 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders without crashing 1`] = `
-<header>
+<header
+  onClick={[MockFunction]}
+  onKeyDown={[MockFunction]}
+  role="button"
+  tabIndex={0}
+>
   <div
-    className="headerContent"
+    className="headerLine"
+  >
+    <hr />
+  </div>
+  <div
+    className="headerTitle"
   >
     <div
       className="circle"
     >
       BS
     </div>
+    <div
+      className="headerCaption"
+    >
+      The Book Shelf
+    </div>
+  </div>
+  <div
+    className="headerLine"
+  >
+    <hr />
   </div>
 </header>
 `;

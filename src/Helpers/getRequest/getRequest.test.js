@@ -1,6 +1,6 @@
 import axios from 'axios';
-import mockPosts from '../../mockData';
-import getRequest from './request.js';
+import mockPosts from '../../mockData/booksWithLiked.json';
+import getRequest from './getRequest';
 
 describe('getRequest()', () => {
   let getMockHelper;
@@ -11,7 +11,7 @@ describe('getRequest()', () => {
   afterAll(() => {
     getMockHelper.mockRestore();
   });
-  it('fetches data', async () => {
-    expect((await getRequest()).data).toEqual(mockPosts);
+  it('fetches and returns data from url', async () => {
+    expect((await getRequest())).toEqual(mockPosts);
   });
 });

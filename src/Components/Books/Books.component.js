@@ -5,9 +5,9 @@ import './Books.component.css';
 
 const Books = (props) => {
   const authors = [];
-  const { books } = props;
+  const { books, handleLikeClick } = props;
   Object.keys(books).forEach((author) => {
-    authors.push(<BooksByAuthor author={author} books={books[author]} key={author} />);
+    authors.push(<BooksByAuthor author={author} books={books[author]} handleLikeClick={handleLikeClick} key={author} />);
   });
   return (
     <div className="books">
@@ -28,5 +28,6 @@ Books.propTypes = {
       }).isRequired,
     ).isRequired,
   ).isRequired,
+  handleLikeClick: PropTypes.func.isRequired,
 };
 export default Books;

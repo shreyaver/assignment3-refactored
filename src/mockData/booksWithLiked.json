@@ -1,0 +1,40 @@
+{ "books": {
+  "J K Rowling":
+    [{ "Author": "J K Rowling",
+        "id":70,
+        "Name":"Harry Potter and the Deathly Hallows (Harry Potter, #7)",
+        "rating":4.62,
+        "liked": false
+     },
+     {"Author": "J K Rowling",
+      "id":30,
+      "Name":"Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
+      "rating":4.54,
+      "liked": false
+     },
+     {"Author":"J K Rowling",
+      "id":60,
+      "Name":"Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
+      "rating":4.54,
+      "liked": false
+    }],
+  "Sidney Sheldon":
+    [{"Author":"Sidney Sheldon",
+      "id":90,
+      "Name":"Master of the Game",
+      "rating":4.1,
+      "liked": false
+     },
+     {"Author":"Sidney Sheldon",
+      "id":80,
+      "Name":"If Tomorrow Comes (Tracy Whitney Series, #1)",
+      "rating":4.02,
+      "liked": false
+     },
+     {"Author":"Sidney Sheldon",
+      "id":100,
+      "Name":"Tell Me Your Dreams",
+      "rating":3.93,
+      "liked": false
+     }]
+}}

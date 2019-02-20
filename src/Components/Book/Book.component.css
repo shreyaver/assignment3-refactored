@@ -1,53 +1,50 @@
 .book {
-    width: 30%;
     margin-top: 3%; 
     margin-bottom: 1.5%;
-    min-width: 300px;
-    max-width: 400px;
+    width: 300px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .imagePanel {
-    width:100%;
-    flex-shrink: 0;
-    flex-grow: 0;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    flex: 1;
 }
-.bookDataOdd, .bookDataEven {
-    font-size: 1.5rem;
+.bookData {
+    font-size: 1.25rem;
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0px 10px 10px 15px;
 }
-.bookDataOdd {
-    background-color: white;
-    color: orange;
+.bookData .bookName {
+    align-self: center;
 }
-.bookDataEven {
-    background-color: orange;
-    color: rgb(6, 6, 59);
+.bookData span {
+    font-size: 1.85rem;
+    font-weight: bold;
 }
-button {
-    height: 25px;
-    width: 25px;
+.likedHeartIcon, .heartIcon {
+    height: 30px;
+    width: 30px;
     border: none;
-}
-button:focus {
+    float: right;
+    background-color: transparent;
     outline: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .bookName {
     text-align: center;
     text-transform: uppercase;
 }
 .heartIcon {
-    float:right;
     background-image: url("../../Icons/heart-black.svg");
+
 }
 .likedHeartIcon {
-    float:right;
     background-image: url("../../Icons/heart-red.svg");
 }
